@@ -48,6 +48,7 @@ void exercice2() {
         printf("Quel entier voulez-vous inserer a la %deme case du tableau ?\n", i+1);
         scanf("%d", &tableau[i]);
     }
+    m = tableau[0];
     for ( i = 0; i < a; i++ ) {
         if ( tableau[i] >= m ) {
             m = tableau[i];
