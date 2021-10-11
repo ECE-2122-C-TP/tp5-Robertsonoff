@@ -38,6 +38,9 @@ NombreRationnel multiplication( NombreRationnel q, NombreRationnel s) {
 }
 
 
+//IN 2 nombres rationnels q et s
+//OUT 1 nombre rationnel f
+//Cette fonction effectue l'addition de deux nombres rationnels
 NombreRationnel addition( NombreRationnel q, NombreRationnel s) {
     NombreRationnel f;
     f.numerateur = (q.numerateur * s.denominateur) + (s.numerateur * q.denominateur);
@@ -46,6 +49,9 @@ NombreRationnel addition( NombreRationnel q, NombreRationnel s) {
 }
 
 
+//IN 1 nombre rationnel q
+//OUT 1 entier
+//Cette fontion renvoie le pgcd du numerateur et du denominateur d'un nombre rationnel
 int PGCD( NombreRationnel q) {
     int a = q.numerateur;
     int b = q.denominateur;
