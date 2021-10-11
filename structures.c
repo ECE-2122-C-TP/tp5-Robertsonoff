@@ -6,6 +6,9 @@
 #include <stdio.h>
 
 
+//IN void
+//OUT 1 nombre rationnel q
+//Cette fonction permet de creer un nombre rationnel
 NombreRationnel saisie() {
     NombreRationnel q;
     printf("Entrez le numerateur\n");
@@ -16,11 +19,17 @@ NombreRationnel saisie() {
 }
 
 
+//IN void
+//OUT void
+//Cette procedure affiche le nombre rationnel
 void afficher( NombreRationnel q) {
     printf("%d / %d", q.numerateur, q.denominateur);
 }
 
 
+//IN 2 nombres rationnels q et s
+//OUT 1 nombre rationnel f
+//Cette fonction effectue la multiplication de deux nombres rationnels
 NombreRationnel multiplication( NombreRationnel q, NombreRationnel s) {
     NombreRationnel f;
     f.numerateur = q.numerateur * s.numerateur;
